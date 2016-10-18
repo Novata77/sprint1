@@ -1,0 +1,128 @@
+<template name="profile">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="mainProfile">
+    <nav class="navbar1 navbar-default" role="navigation">
+      <div class="container">
+
+        <div class="navbar-cabezera">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-va">
+            <span class="sr-only">desplegar/ocultar menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="navegacion-va">
+          <ul class="nav navbar-nav navbar-right">
+            <li class=¨active¨><a href="#" style="color:#ffffff">Perfil</a></li>
+            <li><a href="#" style="color:#ffffff"><span class="glyphicon glyphicon-home"> Inicio</span></a></li>
+            <li><a href="#" style="color:#ffffff">Buscar amigos</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" style="color:#ffffff"><span class="glyphicon glyphicon-lock">  </span><span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Crear grupo</a></li>
+                <li><a href="#">Configuracion</a></li>
+                <li><a href="#">Salir</a></li>
+                <li><a href="#">Ayuda</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          <form action="" class="navbar-form navbar-left" role="search" >
+            <div class="form-group">
+              <input tipy="text" class="form-control" placeholder="buscar" size ="70">
+            </div>
+            <button type="submit" class="btn btn-primario">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+<div class="container" >
+  <div class="row">
+    <div class="col">
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="m-container">
+         <h4 class="m-center">Mi Perfil</h4>
+         <p class="m-center"><img src="/w3images/avatar3.png" class="w3-circle" style="height:150px;width:200px" alt="Imagen"></p>
+        </div>
+      </div>
+      <div class="userinform">
+        <div class="userinform1">
+
+          <ul class="w3-navbar w3-right" style="width:55%;overflow:hidden;height:44px">
+            <li><a href='javascript:void(0);' class='topnav-localicons w3-hide-large w3-left' onclick='open_menu()' title='Menu'>&#9776;</a></li>
+            <li><a href='#' class='hide-small'>Biografia</a></li>
+            <li><a href='#' class='hide-small'>Informacion</a></li>
+            <li><a href='#' class='hide-small'>Amigos</a></li>
+            <li><a href='#' class='hide-small'>Fotos</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"> Mas <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Musica</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Libros</a></li>
+            </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <br> <br/><br/><br/>   
+    
+      <div class="w3-card-2 w3-round w3-white w3-hide-small" style="height:300px;width:200px">
+        <div class="w3-container">
+          <p>Intereses</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">nuevo</span>
+            <span class="w3-tag w3-small w3-theme-d2">Juegos</span>
+            <span class="w3-tag w3-small w3-theme-d1">Amigos</span>
+            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+            <span class="w3-tag w3-small w3-theme-l3">Grupos</span>
+            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+          </p>
+        </div>
+      </div>
+      <br>
+    
+    </div>
+    
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding w3- right" style="height:100px;width:300px">
+            <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Como te sientes</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+              <button type="button" class="w3-btn w3-theme"><i class="fa fa-pencil"></i>  Post</button>
+            </div>
+          </div>
+      </div>
+    </div>  
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>hola</h4><br>
+        <hr class="w3-clear">
+        <p>hola bienvenido a mi perfil</p>
+        <button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+        <button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comentario
+        </button>
+
+    </div>
+  </div>
+</div>
+<br>
+</body>
+</template>

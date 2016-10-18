@@ -1,0 +1,45 @@
+<template name="start">
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+
+				<div class="navbar-cabezera">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-va">
+						<span class="sr-only">desplegar/ocultar menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--<a class="navbar-brand" href="#">RED SOCIAL ACADEMICA</a>-->
+				</div>
+		
+				<div class="collapse navbar-collapse" id="navegacion-va">
+					<ul class="nav navbar-nav navbar-right">
+						<li class=¨active¨><a href="/profile" style="color:#ffffff">Perfil</a></li>
+						<li><a href="#" style="color:#ffffff"><span class="glyphicon glyphicon-home"> Inicio</span></a></li>
+						<li><a href="#" style="color:#ffffff">Buscar amigos</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" style="color:#ffffff"><span class="glyphicon glyphicon-lock">  </span><span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Crear grupo</a></li>
+								<li><a href="#">Configuracion</a></li>
+								<li><a href="#">Salir</a></li>
+								<li><a href="#">Ayuda</a></li>
+							</ul>
+						</li>
+						
+					</ul>
+					<form action="" class="navbar-form navbar-left" role="search" >
+						<div class="form-group">
+							<input tipy="text" class="form-control" placeholder="buscar" size ="70">
+						</div>
+						<button type="submit" class="btn btn-primario">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+</template>
